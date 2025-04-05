@@ -1,5 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Search from './components/search/Search'
+
 
 export default function App () {
-  return (<p>App started</p>)
+
+  const [search, setSearch] = useState('')
+
+  return (
+    <>
+      <Search onChange={setSearch} value={search} />
+      <p>{search}</p>
+    </>
+  )
+  
 }

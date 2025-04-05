@@ -1,0 +1,18 @@
+.search {
+  height: 40px;
+  border-radius: 20px;
+  width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.clearSearch {
+  height: 48px;
+  width: 48px;
+  position: relative;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  top: 4px;
+  left: -48px;
+}
