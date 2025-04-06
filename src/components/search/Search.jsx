@@ -14,7 +14,7 @@ const Search = (props) => {
   return (
     <>
       <input name="search" className={styles.search} type="text" placeholder="Search wathever..." value={props.value} onChange={handleChange} />
-      <button name="clear-search" className={styles.clearSearch} onClick={handleClear}>❌</button>
+      <button name="clear-search" className={styles.clearSearch} onClick={handleClear}><span className="material-symbols-outlined">close</span></button>
     </>
   )
 }

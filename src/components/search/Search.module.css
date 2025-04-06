@@ -4,6 +4,7 @@
   width: 300px;
   padding: 10px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .clearSearch {
@@ -12,7 +13,14 @@
   position: relative;
   background: transparent;
   border: none;
-  font-size: 18px;
-  top: 4px;
+  top: 8px;
   left: -48px;
+  opacity: .6;
+  transition: .1s;
+}
+
+.clearSearch:hover {
+  opacity: 1;
+  color: #242424;
+  scale: 1.2;
 }
