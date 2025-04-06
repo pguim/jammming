@@ -24,3 +24,13 @@
   color: #242424;
   scale: 1.2;
 }
+
+.searchButton {
+  background-color: #1ED760;
+  color: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 18px;
+  vertical-align: middle;
+}

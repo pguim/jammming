@@ -7,13 +7,13 @@ export default function App () {
 
   const [search, setSearch] = useState('')
 
-  useEffect(()=>{
-    
-  },[])
+  useEffect(() => {
+
+  }, [])
 
   return (
     <>
-      <Search onChange={setSearch} value={search} />
+      <Search onChange={setSearch} value={search} onClick={Spotify.searchItem} />
       <p>{search}</p>
     </>
   )

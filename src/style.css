@@ -5,8 +5,3 @@
   border: none;
   box-sizing: border-box;
 }
-
-body {
-  display: flex;
-  align-content: center;
-}
