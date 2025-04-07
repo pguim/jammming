@@ -1,0 +1,58 @@
+.card {
+  width: 98%;
+  min-height: 50px;
+  padding: 0px;
+  background-color: #252525;
+  border: 1px solid #101010;
+  box-shadow: 2px 2px 5px 2px #404040;
+  overflow: hidden;
+  margin: 3px 0px 0px 3px;
+  transition: all 0.1 ease;
+
+  &:hover {
+    scale: 1.01;
+    background-color: #303030;
+  }
+}
+
+.title {
+  font-size: 16px;
+  margin: 5px;
+}
+
+.artist {
+  opacity: .7;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline;
+  margin: 0px 5px;
+}
+
+.artist::after {
+  content: ' -';
+}
+
+.album {
+  opacity: .4;
+  font-size: 14px;
+  display: inline;
+  font-weight: 100;
+  font-style: oblique;
+  margin: 0px;
+}
+
+.addButton {
+  background: transparent;
+  float: right;
+  height: 100%;
+  width: auto;
+  color: #9f9f9f;
+  border: none;
+  cursor: pointer;
+  transition: all .3s ease;
+
+  &:hover {
+    scale: 1.2;
+    color: #c9c9c9;
+  }
+}

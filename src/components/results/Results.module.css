@@ -1,6 +1,9 @@
-.main {
-  position: absolute;
-  display: inline-flex;
+.resultsContainer {
+  max-width: 600px;
+}
+
+.itemsList {
+  display: flex;
   flex-direction: column;
   align-items: start;
   margin-top: 20px;
@@ -19,4 +22,23 @@
   height: 100%;
   align-content: center;
   text-align: center;
+}
+
+.resultsTitle {
+  font-size: 20px;
+  display: inline-block;
+  max-width: 100%;
+  color: white;
+  opacity: .7;
+  width: 100%;
+}
+
+.resultsTitleText {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+  opacity: 1;
+  text-wrap: no-wrap;
+  text-overflow: ellipsis;
 }

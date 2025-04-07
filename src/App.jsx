@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react'
 import Search from './components/search/Search'
 import Spotify from './utils/Spotify'
 import Results from './components/results/Results'
+import Tracklist from './components/tracklist/Tracklist'
 
 export default function App () {
 
   const [search, setSearch] = useState('')
   const [searchCriteria, setSearchCriteria] = useState('')
   const [results, setResults] = useState([])
+  const [tracklist, setTracklist] = useState([])
 
   const getResults = async () => {
     const res = await Spotify.searchItems(searchCriteria)
@@ -32,7 +34,8 @@ export default function App () {
         <Search onChange={setSearch} value={search} submit={setSearchCriteria} />
       </header>
       <main>
-        <Results items={results} />
+        <Results searchCriteria={searchCriteria} items={results} onClick={setTracklist} />
+        <Tracklist items={tracklist} />
       </main>
     </>
   )

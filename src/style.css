@@ -7,6 +7,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  overflow: hidden;
+}
+
 .main-title {
   color: white;
   width: 100%;
@@ -14,7 +18,11 @@
 }
 
 main {
+  position: absolute;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  height: 90%;
+  overflow: hidden;
 }
