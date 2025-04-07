@@ -13,14 +13,15 @@ const Search = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    props.onClick(props.value)
+    props.submit(props.value)
+    props.onChange('')
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form id="form" onSubmit={handleSubmit} className={styles.form}>
       <input name="search" className={styles.search} type="text" placeholder="Search wathever..." value={props.value} onChange={handleChange} />
-      <button name="clear-search" className={styles.clearSearch} onClick={handleClear}><span className="material-symbols-outlined">close</span></button>
-      <input type="submit" name="search-button" className={styles.searchButton} />
+      <button name="search-button" className={styles.searchButton} onClick={handleSubmit}><span className="material-symbols-outlined">search</span><p>Search</p></button>
+      <input type="submit" hidden />
     </form>
   )
 }

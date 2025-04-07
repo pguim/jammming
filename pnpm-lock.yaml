@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  jammming:
+    specifier: 'file:'
+    version: 'file:'
   react:
     specifier: ^19.1.0
     version: 19.1.0
@@ -567,3 +570,11 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
+
+  'file:':
+    resolution: {directory: '', type: directory}
+    name: jammming
+    dependencies:
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+    dev: false
