@@ -3,24 +3,6 @@ import Search from './components/search/Search'
 import Spotify from './utils/Spotify'
 import Results from './components/results/Results'
 
-const test = [
-  {
-    "id": "3btAydrRwnKTGk7jUhGgI5",
-    "name": "Deltebre Dansa",
-    "artist": "LOS CHINGAWHATS",
-    "album": "Dopamina",
-    "uri": "spotify:track:3btAydrRwnKTGk7jUhGgI5"
-  },
-  {
-    "id": "65T5M1jS5XVVbVoBNiihRn",
-    "name": "Dela",
-    "artist": "Delirium Tremens",
-    "album": "Hordago",
-    "uri": "spotify:track:65T5M1jS5XVVbVoBNiihRn"
-  }
-]
-
-
 export default function App () {
 
   const [search, setSearch] = useState('')
